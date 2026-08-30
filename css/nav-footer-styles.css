@@ -1,0 +1,280 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This handles the styles for the navbar and footer on all pages */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/***************************************** NAVIGATION STYLES ***********************************/
+nav, nav ul{
+    display: flex;
+}
+nav{
+    background-color: #1c1c1c;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style-type: none;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
+    gap: 2px;
+}
+nav ul li a, nav ul li label{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+nav ul li a:hover, nav ul li label{
+    cursor: pointer;
+}
+
+
+
+
+/* NAV1 ---------------------------------------------*/
+#nav1{
+    position: sticky;
+    top: 0;
+    padding: 20px 100px;
+    width: 100%;
+    justify-content: space-between; /*splits logo form other nav1 content */
+    z-index: 100;
+}
+#nav1 ul li a{
+    color: white;
+    border-radius: 6px;
+    padding: 18px 20px;
+}
+#nav1 ul li a:hover{
+    background-color: #414141;
+}
+
+#nav1 .logo{
+    height: auto;
+}
+#nav1 .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 20px;
+}
+#nav1 .search-bar{
+    width: 20%;
+    transition: all 0.3s ease;
+}
+#nav1 .search-bar:focus-within{
+    width: 30%;
+}
+#nav1 .search-bar input{
+    background-color: #2f2f2f;
+    color: white;
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+
+
+/* NAV2 ---------------------------------------------*/
+#nav2{
+    display: flex;
+    flex-direction: column;
+}
+#nav2 > ul{
+    padding: 0px 100px;
+    background-color: #eeeeee;
+    width:100%;
+    z-index: 5;
+}
+#nav2 > ul li label{
+    color: black;
+    width: 145px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid transparent;
+}
+#nav2 > ul li label:hover,
+#nav2:has(#new-and-trending:checked) label[for="new-and-trending"],
+#nav2:has(#sports:checked) label[for="sports"],
+#nav2:has(#men:checked) label[for="men"],
+#nav2:has(#women:checked) label[for="women"],
+#nav2:has(#kids:checked) label[for="kids"],
+#nav2:has(#shoes:checked) label[for="shoes"],
+#nav2:has(#clothing:checked) label[for="clothing"],
+#nav2:has(#accessories:checked) label[for="accessories"],
+#nav2:has(#outdoor:checked) label[for="outdoor"],
+#nav2:has(#equipment:checked) label[for="equipment"]{
+    border-bottom-color: #414141;
+    background-color: #dfdfdfdf;
+}
+.toggle-checkbox{
+    display: none;
+}
+
+
+#nav2 > div{
+    position: absolute;
+    background-color: white;
+    border-bottom: #4c4c4c 2px solid;
+    top: -238px;
+    width: 100%;
+    padding: 40px 80px;
+    transition: top 800ms ease-in 1600ms,
+                top 800ms ease-out;
+    z-index: 1;
+}
+
+
+/* NAV 2 BANNERS ------------------------------------*/
+#nav2:has(#new-and-trending:checked) .newandt-banner,
+#nav2:has(#sports:checked) .sports-banner,
+#nav2:has(#men:checked) .men-banner,
+#nav2:has(#women:checked) .women-banner,
+#nav2:has(#kids:checked) .kids-banner,
+#nav2:has(#shoes:checked) .shoes-banner,
+#nav2:has(#clothing:checked) .clothing-banner,
+#nav2:has(#accessories:checked) .accessories-banner,
+#nav2:has(#outdoor:checked) .outdoor-banner,
+#nav2:has(#equipment:checked) .equipment-banner{
+    top: 147px;
+    transition: top 800ms ease;
+}
+
+#nav2 > div h3{
+    font-size: 27px;
+    color: #1c1c1c;
+}
+#nav2 > div section{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+#nav2 > div section div{
+    width: 30%;
+}
+#nav2 > div section h4{
+    padding: 30px 0 10px 0;
+    border-bottom: #b4b4b4 1px solid;
+    margin-bottom: 15px;
+}
+#nav2 > div section h4 a{
+    text-decoration: none;
+    color: #414141;
+}
+#nav2 > div section ul{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;/
+}
+#nav2 > div section ul li a{
+    color: black;
+    padding: 12px 0;
+}
+#nav2 > div section ul li a:hover, #nav2 > div section h4 a:hover{
+    text-decoration: underline;
+}
+
+
+
+/********************************************* FOOTER STYLES *************************************************/
+footer{
+    background-color: #1c1c1c;
+    color: #ffffff;
+    height: auto;
+    padding: 70px 40px 20px 40px;
+}
+
+.footer-sections{
+    display: flex;
+}
+
+/* FOOTER TOP -----------------------------*/
+.footer-top{
+    padding: 0 150px;
+    justify-content: space-between;
+}
+.footer-top h1{
+    font-size: 84px;
+    font-weight: 700;
+    opacity: .7;
+}
+.footer-links{
+    display: flex;
+    gap: 100px;
+}
+.footer-top-sections{}
+
+
+
+/* FOOTER BOTTOM --------------------------*/
+.footer-bottom{
+    justify-content: space-between;
+    align-items: center;
+    border-top: .2px solid #676767;
+    padding-top: 20px;
+    margin-top: 50px;
+}
+.footer-bottom p{
+    font-size: 12px;
+}
+
+.contact-us ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footer-top-sections h4, .contact-us h4{
+    margin: 0 0 5px 0;
+    opacity: .6;
+    font-weight: bold;
+}
+.footer-top-sections ul, .contact-us ul{
+    font-size: 12px;
+    list-style-type: none;
+    line-height: 3;
+}
+.footer-top-sections ul li a, .contact-us ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-top-sections ul li a:hover{
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+.social-media-links{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+/* BUTTON STYLES */
+button,
+input[type = submit],
+input[type = button]{
+    transform: scaleX(1) scaleY(1);
+    transition: transform .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+button:hover,
+input[type = submit]:hover,
+input[type=button]:hover{
+    cursor: pointer;
+}
+
+button:active,
+input[type = submit]:active,
+input[type= button]:active{
+    transform: scaleX(.88) scaleY(.88);
+}

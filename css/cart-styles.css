@@ -1,0 +1,237 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This handles the styles for the cart page. */
+
+.banner{
+    /* background-color: #247; */
+    background-image: url(https://images.unsplash.com/photo-1646586994752-331e8a0ceae0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340);
+    background-size: 100%;
+    background-position-y: 30%;
+    /* background-attachment: fixed; */
+}
+
+.banner h1{
+    padding: 70px 100px 30px 100px;
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 0px 30px #1c1c1c;
+    backdrop-filter: blur(3px);
+}
+
+
+/* ================================================ MAIN ================================================ */
+main{
+    padding: 30px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+main section{
+    /* background-color: green; */
+}
+
+/*================================ MAIN SECTIONS */
+/* CART ITEMS */
+.cart-items{
+    background-color: #2473;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    grid-row: span 2;
+}
+.cart-item{
+    background-color: white;
+    height: 120px;
+    padding: 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+/* thumbnail */
+.item-thumbnail{
+    height: 100%;
+    width: 20%;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+/* info */
+.item-info{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: lightgray; */
+}
+.item-info label[for = item-details]{
+    font-size:20px;
+}
+
+/* amount */
+.item-amount{
+    /* background-color: #1c1c1c; */
+    /* color: white; */
+    height: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-amount a{
+    text-decoration: none;
+}
+.item-amount button{
+    width: 50px;
+    height: 29px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* font-size: 20px; */
+    border: none;
+    border-radius: 4px;
+    background-color: #eee;
+    color: black;
+}
+
+
+
+
+
+/* CART SUMMARY */
+.cart-summary{
+    background-color: #2473;
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 30px;
+    /* gap: 50px; */
+    border-radius: 8px;
+}
+
+/* cart details */
+.cart-details{
+}
+.cart-details p:nth-child(1){
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.cart-details ul{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 2;
+    list-style-type: none;
+}
+.cart-details ul li{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+.cart-details ul li span{
+    /* color: purple; */
+    font-size: 16px;
+}
+.cart-details ul li span,
+.cart-details ul li p{
+    display: inline-block;
+}
+.cart-details ul div{
+    background-color: #dddd;
+    height: 1px;
+    margin: 30px 0px;
+
+}
+
+/* discount */
+.discount-and-coupons{
+    /* background-color: green; */
+    margin-top: 40px;
+}
+.discount-and-coupons p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.discount-and-coupons div{
+    display: flex;
+    gap: 8px;
+}
+.discount-and-coupons div input{
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+}
+.discount-and-coupons div input:nth-child(1){
+    width: 100%;
+}
+.discount-and-coupons div input:nth-child(2){
+    background-color: #1c1c1c;
+    color: white;
+    width: 20%;
+}
+
+
+/* payment method */
+.payment-method{
+    display: flex;
+    /* background-color: orange; */
+    width: 100%;
+    gap: 8px;
+}
+.payment-method a{
+    width: 100%;
+}
+.payment-method button{
+    border: none;
+    border-radius: 8px;
+    padding: 18px 0;
+    width: 100%;
+    font-size: 16px;
+}    
+.payment-method a:nth-child(1) button{
+    background-color: #eee;
+}
+.payment-method a:nth-child(2) button{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
+/* CART ACTIONS */
+.cart-actions{
+    background-color: #2473;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    grid-row: 3;
+    /* align-items: end; */
+}
+.cart-actions a{
+    width: 100%;
+}
+.cart-actions button{
+    /* padding: 0 40px; */
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #1c1c1c;
+    color: white;
+}
+.cart-actions a:nth-child(2) button{
+    background-color: red;
+}

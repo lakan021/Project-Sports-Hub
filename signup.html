@@ -1,0 +1,93 @@
+<!-- Author: Oluwaperosayemi Adetunji
+Explantion: sign-up page. Self explanatory -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/login-signup.css">
+    <title>sign up</title>
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="https://cdn.cosmos.so/b7b443d8-a30c-4d48-91ab-f42023b6c2a1.mp4">
+    </video>
+    <header>
+        <nav id="nav1" class="nav">
+            <section>logo</section>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form action="index.html">
+            <div class="signup-header">
+                <h2>Welcome to SportsHub</h2>
+                <p>fill the form to sign up</p>
+            </div>
+
+            <section class="textfield-container">
+                <label for="fname" class="textfield-labels">Firstname</label>
+                <input type="text" id="fname" class="textfields" placeholder="" required>
+            </section>
+            
+            <section class="textfield-container">
+                <label for="lname" class="textfield-labels">Lastname</label>
+                <input type="text" id="lname" class="textfields" placeholder="">
+            </section>
+            
+            <section class="textfield-container">
+                <label for="address" class="textfield-labels">Email</label>
+                <input type="text" id="address" class="textfields" placeholder="" required>
+            </section>
+            
+            <section class="textfield-container">
+                <label for="password" class="textfield-labels">Password</label>
+                <input type="password" id="password" class="textfields" placeholder="" required>
+            </section>
+            
+            <section class="textfield-container">
+                <label for="confirm-password" class="textfield-labels">Confirm Password</label>
+                <input type="password" id="confirm-password" class="textfields" placeholder="" required>
+            </section>
+           
+            <section class="textfield-checkbox" class="textfield-labels">
+                <!-- <div>
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Sign me up for updates on exclusive offers</label>
+                </div> -->
+
+                <div>
+                    <p>By continuing, you agree our <a href="">Terms</a> and <a href="">Privacy Policy</a></p>
+                </div>
+            </section>
+
+            <section class="submit">
+                <input type="submit" name="Sign up" id="sign-up" value="Sign up">
+            </section>
+
+            <div class="bottom-link">
+                <a href="login.html">Already got an account?</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </footer>
+</body>
+</html>

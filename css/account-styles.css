@@ -1,0 +1,173 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This handles styles on only the accounts page. */
+
+.banner{
+    /* background-color: grey; */
+    background-image: url(https://images.unsplash.com/photo-1530870110042-98b2cb110834?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340);
+    background-size: 100%;
+    background-position-y: 40%;
+    /* background-attachment: fixed; */
+}
+
+h1{
+    padding: 70px 100px 30px 100px;
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 60px #1c1c1c;
+    backdrop-filter: blur(8px);
+    /* letter-spacing: 7px; */
+}
+
+
+main{
+    /* background-color: #dddddd; */
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    padding: 80px 100px 100px 100px;
+}
+main section{
+    /* width: 60%; */
+    /* background-color: orange; */
+    height:auto
+}
+/* 
+main section:nth-child(4),
+main section:nth-child(5),
+main section:nth-child(6){
+    grid-column: span 2;
+    background-color: #1c1c1c;
+} */
+
+main section label{
+    display: block;
+    height: auto;
+    padding: 30px 40px;
+    background-color: #2472;
+    color: black;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    /* border: #4c4c4c 2px solid; */
+    box-shadow: 0px 3px 2px 0px #2475 ;
+    /* margin-bottom: 1px; */
+}
+main section label:hover{
+    background-color: #2476;
+}
+main section input[type = checkbox]{
+    display: none;
+}
+
+main section ul{
+    /* background-color: #2473; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 5px;
+    padding: 0 30px;
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 600ms ease, margin 200ms ease;
+}
+main section ul li{
+    background-color: #2473;
+    color: black;
+    padding: 20px 60px;
+    border-radius: 8px;
+    /* border-bottom: 2px solid #4c4c4c; */
+    list-style-type: none;
+}
+main section ul li:hover{
+    background-color: #2478;
+}
+
+main section:nth-child(1):has(#profile-info:checked) ul{
+    height: 190px;
+    margin-top: 9px;
+}
+main section:nth-child(2):has(#my-orders:checked) ul{
+    height: 250px;
+    margin-top: 9px;
+}
+
+
+
+
+/* PROFILE CARD *//* PROFILE CARD *//* PROFILE CARD *//* PROFILE CARD *//* PROFILE CARD *//* PROFILE CARD *//* PROFILE CARD */
+.profile-card{
+    background-color: #253555;
+    color: white;
+    border-radius: 8px;
+    grid-column: 2;
+    grid-row: 1/ span 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px ;
+}
+
+.profile, .profile-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile h2, .pfp,
+.profile-info span, .profile-info span p{
+    display: inline-block;
+}
+
+
+
+.profile{
+    position: relative;
+    align-items: center;
+}
+.pfp{
+    background-image: url(https://images.unsplash.com/photo-1599009434802-ca1dd09895e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    background-position-x: 50%;
+    background-position-y: 50%;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+}
+.pfp-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 6px solid white;
+    /* padding: 2px; */
+
+}
+
+
+.profile-info{
+    /* background-color: aliceblue; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.logout-section{
+    text-align: center;
+}
+.logout-btn{
+    background-color: red;
+    color: white;
+    padding: 20px 180px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    
+}

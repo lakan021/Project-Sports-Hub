@@ -1,0 +1,36 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This handles most if not all the animations on all pages. The transition to and from pages and button annimations. */
+
+/* ENTRY */
+.banner {
+  animation: downNIn 700ms cubic-bezier(0.25, 0.8, 0.25, 1) 1; /* 'ease' but smoother */
+}
+@keyframes downNIn {
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+main {
+  animation: upNFade 700ms cubic-bezier(0.25, 0.8, 0.25, 1) 1;
+}
+@keyframes upNFade {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* EXIT */
+.upNOut {
+  animation: upNOut 500ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes upNOut {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-40px); }
+}
+
+.downNFade {
+  animation: downNFade 500ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+@keyframes downNFade {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(40px); }
+}

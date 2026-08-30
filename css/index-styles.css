@@ -1,0 +1,188 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This handles styles on the homepage "index.html". */
+
+/********************************************** HEADER STYLES **************************************************/
+header{
+    margin-bottom: 60px;
+    height: 80vh;
+    width: 100vw;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+    /* background-image: url(https://images.unsplash.com/photo-1530870110042-98b2cb110834?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2340); */
+    /* background-image: url(https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3393); */
+    background-image: url(https://images.unsplash.com/photo-1536244792875-ae64f6842985?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2764);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.banner-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    /* background-color: lightblue; */
+    padding: 60px 100px;
+}
+.banner-content h1{
+    font-size: 120px
+}
+.banner-content input{
+    border: none;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 12px 30px;
+}
+/* .banner-img-div{
+    height: 50%;
+    background-color: grey;
+}
+.banner-img-div img{
+    background-color: rgb(163, 116, 56);
+} */
+
+
+
+
+
+/********************************************* MAIN STYLES *****************************************************/
+main{
+    padding: 60px 0;
+}
+.main-section{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 100px;
+    margin-top: 120px;
+}
+.main-section-div2{
+    /* background-color: blue; */
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.main-section-div2 section{
+    background-color: #f5f5f5;
+    width: 100%;
+}
+.main-section-div2 section button{
+    border: none;
+    border-radius: 6px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 16px 40px;
+}
+
+
+/* MAIN SECTIONS -------------------------------*/
+/* SHOP BY CATEGORY */
+.shop-by-category .main-section-div2{}
+.shop-by-category .main-section-div2 section{
+    padding: 30px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-by-category .main-section-div2 section div{
+    text-align: center;
+}
+
+/* FEATURED PRODUCTS */
+.featured-products .main-section-div2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.featured-products .main-section-div2 section{
+    padding: 30px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-products .main-section-div2 section div{}
+/* .featured-products .main-section-div2 section button{
+    border: none;
+    background-color: #414141;
+    color: #ffffff;
+    padding: 12px 30px;
+} */
+
+/* BEST SELLERS */
+.best-sellers .main-section-div2{
+    height: 300px;
+}
+.best-sellers .main-section-div2 section{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+.best-sellers .main-section-div2 section div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.best-sellers .main-section-div2 section a button{
+    width: 150px;
+}
+
+/* DEALS AND PROPMOTIONS */
+.deals-and-promotions .main-section-div2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.deals-and-promotions .main-section-div2 section{
+    height: 200px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* WHY SHOP WITH US */
+.why-shop-with-us{
+    /* background-color: #414141; */
+}
+/* .why-shop-with-us h2{
+    background-image: url(https://images.unsplash.com/photo-1617144520113-88ae706a86eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2490);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 60px 40px;
+
+} */
+.why-shop-with-us ul{
+    /* background-color: #676767; */
+    padding: 0 20px;
+}
+.why-shop-with-us ul li{
+    /* background-color: #b4b4b4; */
+    margin: 0 0 40px 0;
+}
+
+/* POPULAR BRANDS */
+.popular-brands .main-section-div2 section{
+    /* background-color: #f5f5f5; */
+    text-align: center;
+    padding: 20px 0;
+}
+.popular-brands .main-section-div2 section .brand-logos{
+    /* background-color: #414141; */
+}
+.popular-brands .main-section-div2 section .brand-logos img{
+    height: 70px;
+    margin-bottom: 10px;
+    /* background-color: #676767; */
+}

@@ -1,0 +1,8 @@
+/* Author: Oluwaperosayemi Adetunji
+Explantion: This sets the typestyles for all pages. */
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*{
+    font-family: 'Questrial', sans-serif;
+}
